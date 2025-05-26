@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Wireframe</title>
+    <link rel="stylesheet" href="styles/q2.css" />
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="account-dropdown">
+            <div class="account-icon">👤</div>
+            <div class="dropdown-menu">
+                <a href="account.html">Settings</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <a href="hikeevents.html">Hike Events</a>
+        <a href="otherevents.html">Other Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="newsitems.html">News Items</a>
+        <a href="annoucements.html">Announcements</a>
+    </nav>
+</header>
+
+<main class="announcement-layout">
+    <section class="box">
+        <h2>New Announcement</h2>
+        <div class="form-scroll">
+            <form class="form-wrapper" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="SessionIdentifier" value="db34-af22-bcda6836-8070" />
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" maxlength="100" required />
+
+                <label for="sender">Sender Name:</label>
+                <input type="text" id="sender" name="sender" required />
+
+                <label for="attachment">Attachment:</label>
+                <input type="file" id="attachment" name="attachment" />
+
+                <label for="date">Date to Send:</label>
+                <input type="date" id="date" name="date" />
+
+                <label for="time">Time to Send:</label>
+                <input type="time" id="time" name="time" />
+
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="normal">Normal</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" maxlength="200"></textarea>
+
+                <button type="submit">Send Announcement</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="box">
+        <h2>Announcements</h2>
+        <div class="scroll-box">
+            <div class="request-item">
+                <span>New Instagram account on 10th June – 01/06/2025 – Sent by: Lyle – Priority: High</span>
+            </div>
+            <div class="request-item">
+                <span>Walk Leader Training – 22/05/2025 – Sent by: Chelsea – Priority: Normal</span>
+            </div>
+            <div class="request-item">
+                <span>Summer Social BBQ – 15/05/2025 – Sent by: Millie – Priority: Low</span>
+            </div>
+            <div class="request-item">
+                <span>Policy Update Notice – 10/05/2025 – Sent by: Charlie – Priority: Normal</span>
+            </div>
+            <div class="request-item">
+                <span>Weather Warning for Hikes – 02/05/2025 – Sent by: Sam – Priority: High</span>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+

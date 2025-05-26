@@ -1,0 +1,170 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Top logo bar */
+.top-bar {
+    background-color: #a2d2ff;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Account dropdown in top-bar */
+.account-dropdown {
+    position: relative;
+}
+
+.account-icon {
+    font-size: 18px;
+    padding: 6px 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.account-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #eee;
+}
+
+/* Navigation bar */
+.nav-bar {
+    display: flex;
+    background-color: #bde0fe;
+    padding: 15px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+/* Layout for announcements */
+.announcement-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Box styling */
+.box {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    min-height: 150px;
+}
+
+.box h2 {
+    background-color: #a2d2ff;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Scrollable list */
+.scroll-box {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.request-item span {
+    flex: 1;
+    word-break: break-word;
+}
+
+/* Form styling */
+.form-scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-wrapper label {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper textarea {
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-wrapper input[type="file"] {
+    padding: 4px 0;
+}
+
+.form-wrapper textarea {
+    resize: vertical;
+}
+
+.form-wrapper button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: default;
+}
